@@ -1,2 +1,15 @@
 NotifyMe
 ========
+#概述
+##功能
+定时检测论坛某个页面的特定类型帖子，发现有新帖时邮件通知用户。
+##参考
+程序思路参考[spider_python](https://github.com/lizherui/spider_python)，做了一些简化。
+##目前支持的论坛
+UESTC清水河畔  
+若要支持其他论坛，需要改写下_create_session和_get_new_posts_from_page
+#依赖的第三方库
+bs4  
+apscheduler  
+requests  
+redis  
